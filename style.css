@@ -180,6 +180,14 @@ h3 {
   color: #9390ff;
   margin: 20px;
   text-transform: uppercase;
+  margin-left: 150px;
+}
+
+.recent-work {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+  justify-content: center;
 }
 
 .card-container {
@@ -205,6 +213,13 @@ h3 {
 .card-body p {
   font-size: 30px;
   text-align: left;
+}
+
+.card-body h3 {
+  font-size: 45px;
+  color: #9390ff;
+  margin: 20px;
+  text-transform: uppercase;
 }
 
 .card-body ul {
