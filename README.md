@@ -13,20 +13,7 @@ HTML&CSS
 
 Getting Started
 
-
-To get a local copy up and running follow these simple example steps.
-
-Prerequisites
-
-Setup
-
-Install
-
-Usage
-
-Run tests
-
-Deployment
+Clone this project and run index.html 
 
 Authors
 
@@ -34,16 +21,6 @@ Authors
 
 GitHub: @mustabbas
 LinkedIn: https://www.linkedin.com/in/mustafa-abbas-7555ba10a
-
-🤝 Contributing
-
-Contributions, issues, and feature requests are welcome!
-
-Feel free to check the issues page.
-
-Show your support
-
-Give a ⭐️ if you like this project!
 
 
 📝 License
