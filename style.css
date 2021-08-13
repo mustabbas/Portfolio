@@ -175,6 +175,95 @@ span {
   margin-left: auto;
 }
 
+h3 {
+  font-size: 45px;
+  color: #9390ff;
+  margin: 20px;
+  text-transform: uppercase;
+  margin-left: 150px;
+}
+
+.recent-work {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+  justify-content: center;
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+  justify-content: center;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  margin-left: 120px;
+  margin-top: 50px;
+}
+
+.card-body h4 {
+  font-size: 40px;
+  color: #fff;
+}
+
+.card-body p {
+  font-size: 30px;
+  text-align: left;
+}
+
+.card-body h3 {
+  font-size: 45px;
+  color: #9390ff;
+  margin: 20px;
+  text-transform: uppercase;
+}
+
+.card-body ul {
+  display: flex;
+  justify-content: space-around;
+  font-size: 30px;
+  text-align: left;
+}
+
+.vertical-line {
+  height: 50px;
+  border-right: 3px solid #646369;
+}
+
+.button {
+  background-color: #7d73fc;
+  width: 100px;
+  height: 60px;
+  color: #fff;
+  font-size: 15px;
+  margin-top: 20px;
+  margin-left: 150px;
+}
+
+.button:hover {
+  box-shadow: 0 8px 16px rgba(125, 115, 252, 0.48);
+}
+
+input {
+  width: 100%;
+  height: 60px;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+textarea::placeholder {
+  font-size: 20px;
+  padding: 20px;
+}
+
 @media only screen and (max-width: 500px) {
   .header {
     width: 500px;
