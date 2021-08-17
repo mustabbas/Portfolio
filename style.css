@@ -137,9 +137,13 @@ span {
   justify-content: space-around;
 }
 
+.vector-container {
+  width: 200px;
+}
+
 .vector-container ul {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
 }
 
@@ -229,6 +233,16 @@ h3 {
   text-align: left;
 }
 
+.center-text {
+  text-align: center;
+}
+
+#contact-p {
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+}
+
 .vertical-line {
   height: 50px;
   border-right: 3px solid #646369;
@@ -241,11 +255,22 @@ h3 {
   color: #fff;
   font-size: 15px;
   margin-top: 20px;
-  margin-left: 150px;
 }
 
 .button:hover {
   box-shadow: 0 8px 16px rgba(125, 115, 252, 0.48);
+}
+
+.button:enabled {
+  background-color: #7d73fc;
+}
+
+.button:focus {
+  background-color: #5e42d7;
+}
+
+.button:disabled {
+  background-color: #2a2b33;
 }
 
 input {
@@ -257,11 +282,16 @@ input {
   border: 1px solid #ccc;
   border-radius: 4px;
   box-sizing: border-box;
+  margin-bottom: 30px;
 }
 
 textarea::placeholder {
   font-size: 20px;
   padding: 20px;
+}
+
+.btn {
+  margin-top: 30px;
 }
 
 @media only screen and (max-width: 500px) {
@@ -308,8 +338,12 @@ textarea::placeholder {
   }
 
   .footer-nav {
-    width: 500px;
+    width: auto;
     flex-direction: column;
+  }
+
+  .ml {
+    margin-left: 100px;
   }
 
   .upper {

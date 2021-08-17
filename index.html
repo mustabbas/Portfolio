@@ -56,40 +56,34 @@
       </div>
       <div class="line"></div>
     </section>
-        <div class="footer-nav">
-            <div class="work-container upper">
-            <span>Work</span>
-            <div class="arrow-container">
-            <img src="./assets/img/Vector-line-arrow.png" alt="Vector-line-arrow"/>
-            <img src="./assets/img/Vector-arrow.png" alt="Vector-arrow"/>
-             </div>
-            </div>
-            <div class="vector-container"> 
-                <ul>
-                    <li><img src="./assets/img/Vector-github.png" alt="Vector-github"/></li>
-                    <li>
-                        <div class="linked-container">
+    <div class="footer-nav ml">
+        <div class="vector-container"> 
+            <ul>
+                <li><img src="./assets/img/Vector-github.png" alt="Vector-github"/></li>
+                <li>
+                    <div class="linked-container">
                             <div>
-                                <img src="./assets/img/Vector-dot-linkedin.png" alt="Vector-dot-linkedin"/>
-                                <img src="./assets/img/Vector-line-linkedin.png" alt="Vector-line-linkedin"/>
-                          </div>
-                                <img id="vector2" src="./assets/img/Vector-n-linkedin.png" alt="Vector-n-linkedin"/>
-                         </div>
-                    </li>
-                    <li> <img src="./assets/img/Vector.png" alt="Vector"/></li>
-                    <li><img src="./assets/img/Vector-twitter.png" alt="Vector-twitter"/></li>
-                    <li> <img src="./assets/img/Vector-M.png" alt="Vector-M"/></li>
-                </ul>
+                                    <img src="./assets/img/Vector-dot-linkedin.png" alt="Vector-dot-linkedin"/>
+                                    <img src="./assets/img/Vector-line-linkedin.png" alt="Vector-line-linkedin"/>
+                            </div>
+                            <img id="vector2" src="./assets/img/Vector-n-linkedin.png" alt="Vector-n-linkedin"/>
+                     </div>
+                </li>
+                <li> <img src="./assets/img/Vector.png" alt="Vector"/></li>
+                <li><img src="./assets/img/Vector-twitter.png" alt="Vector-twitter"/></li>
+                <li> <img src="./assets/img/Vector-M.png" alt="Vector-M"/></li>
+            </ul>
 
-             </div>
-             <div class="work-container">
-            <div class="arrow-container">
-            <img src="./assets/img/Vector-line-arrow.png" alt="Vector-line-arrow"/>
-            <img src="./assets/img/Vector-arrow.png" alt="Vector-arrow"/>
-            </div>
-            <span>Work</span>
-            </div>
+         </div>
+         <div class="work-container">
+        <div class="arrow-container">
+        <img src="./assets/img/Vector-line-arrow.png" alt="Vector-line-arrow"/>
+        <img src="./assets/img/Vector-arrow.png" alt="Vector-arrow"/>
         </div>
+        <span>Work</span>
+        </div>
+    </div>
+        
     <section class="recent-work">
     <h3>My recent work</h3>
     <div class="line"></div>
@@ -107,7 +101,7 @@
                 <li class="vertical-line"></li>
                 <li>Ruby</li>
             </ul>
-            <button class="button">See Project</button>
+            <button type="button" class="button">See Project</button>
        </div>
     </div>
     <div class="card">
@@ -124,7 +118,7 @@
                  <li class="vertical-line"></li>
                  <li>Ruby</li>
              </ul>
-             <button class="button">See Project</button>
+             <button type="button" class="button">See Project</button>
         </div>
      </div>
      <div class="card">
@@ -141,7 +135,7 @@
                  <li class="vertical-line"></li>
                  <li>Ruby</li>
              </ul>
-             <button class="button">See Project</button>
+             <button type="button" class="button">See Project</button>
         </div>
      </div>
      <div class="card">
@@ -158,22 +152,25 @@
                  <li class="vertical-line"></li>
                  <li>Ruby</li>
              </ul>
-             <button class="button">See Project</button>
+             <button type="button" class="button">See Project</button>
         </div>
      </div>
     </section>
 
-    <section class="card-container">
+    <div class="card-container">
         <div class="card">
-        <div class="card-body">
+        <div class="card-body center-text">
         <h3>CONTACT US</h3>
-        <p>If you have an application you are interested in developing, a feature that you need built or a project that needs coding. I’d love to help with it </p>
-        <input type="text" placeholder="Text Input" />
-        <input type="email" placeholder="jeremy@gmail.com" />
-        <textarea rows="15" cols="48" placeholder="Enter text here"></textarea>
-        <button class="button">See Project</button>
+        <p id="contact-p">If you have an application you are interested in developing, a feature that you need built or a project that needs coding. I’d love to help with it </p>
+        <form method="POST" action="https://formspree.io/f/xdoypzrq" id="aboutmeForm">
+            <input type="text" placeholder="Text Input" maxlength="30" required/>
+            <input type="email" placeholder="jeremy@gmail.com" required/>
+            <textarea rows="15" cols="48" placeholder="Enter text here" maxlength="500" required></textarea>
+            <button type="submit" form="aboutmeForm" class="button btn">See Project</button>
+        </form>
+        
         </div>
-        <div class="footer-nav">
+        <footer class="footer-nav">
             <div class="work-container upper">
             <span>Work</span>
             <div class="arrow-container">
@@ -200,9 +197,9 @@
 
              </div>
             <span>emailhere@email.com</span>
-        </div>
+        </footer>
     </div>
-    </section>
+    </div>
 
 
 </body>
