@@ -266,7 +266,6 @@ input {
   border: 1px solid #ccc;
   border-radius: 4px;
   box-sizing: border-box;
-  margin-bottom: 24px;
 }
 
 textarea::placeholder {

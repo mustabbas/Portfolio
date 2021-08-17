@@ -229,12 +229,8 @@ h3 {
   text-align: left;
 }
 
-.center-text {
-  text-align: center;
-}
-
-#contact-p {
-  font-size: 16px; 
+.contact-p {
+  font-size: 16px;
   line-height: 24px;
   text-align: center;
 }
@@ -251,6 +247,7 @@ h3 {
   color: #fff;
   font-size: 15px;
   margin-top: 20px;
+  margin-left: 150px;
 }
 
 .button:hover {
@@ -266,7 +263,6 @@ input {
   border: 1px solid #ccc;
   border-radius: 4px;
   box-sizing: border-box;
-  margin-bottom: 24px;
 }
 
 textarea::placeholder {
