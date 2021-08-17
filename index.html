@@ -101,7 +101,7 @@
                 <li class="vertical-line"></li>
                 <li>Ruby</li>
             </ul>
-            <button class="button">See Project</button>
+            <button type="button" class="button">See Project</button>
        </div>
     </div>
     <div class="card">
@@ -118,7 +118,7 @@
                  <li class="vertical-line"></li>
                  <li>Ruby</li>
              </ul>
-             <button class="button">See Project</button>
+             <button type="button" class="button">See Project</button>
         </div>
      </div>
      <div class="card">
@@ -135,7 +135,7 @@
                  <li class="vertical-line"></li>
                  <li>Ruby</li>
              </ul>
-             <button class="button">See Project</button>
+             <button type="button" class="button">See Project</button>
         </div>
      </div>
      <div class="card">
@@ -152,24 +152,25 @@
                  <li class="vertical-line"></li>
                  <li>Ruby</li>
              </ul>
-             <button class="button">See Project</button>
+             <button type="button" class="button">See Project</button>
         </div>
      </div>
     </section>
 
-    <section class="card-container">
+    <div class="card-container">
         <div class="card">
         <div class="card-body">
         <h3>CONTACT US</h3>
         <p>If you have an application you are interested in developing, a feature that you need built or a project that needs coding. I’d love to help with it </p>
-        <form>
-        <input type="text" placeholder="Text Input" maxlength="30" required/>
-        <input type="email" placeholder="jeremy@gmail.com" required/>
-        <textarea rows="15" cols="48" placeholder="Enter text here" maxlength="500" required></textarea>
-        <button class="button btn">See Project</button>
+        <form method="POST" action="paste-here-formspree-link" id="aboutmeForm">
+            <input type="text" placeholder="Text Input" maxlength="30" required/>
+            <input type="email" placeholder="jeremy@gmail.com" required/>
+            <textarea rows="15" cols="48" placeholder="Enter text here" maxlength="500" required></textarea>
+            <button type="submit" form="aboutmeForm" class="button btn">See Project</button>
         </form>
+        
         </div>
-        <div class="footer-nav">
+        <footer class="footer-nav">
             <div class="work-container upper">
             <span>Work</span>
             <div class="arrow-container">
@@ -196,9 +197,9 @@
 
              </div>
             <span>emailhere@email.com</span>
-        </div>
+        </footer>
     </div>
-    </section>
+    </div>
 
 
 </body>
