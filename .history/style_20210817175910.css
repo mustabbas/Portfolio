@@ -264,10 +264,11 @@ textarea::placeholder {
   padding: 20px;
 }
 
-.btn  {
-  margin-left: 150 px;
+.btn {
+  margin-left: 150px;
   margin-top: 30px;
 }
+
 @media only screen and (max-width: 500px) {
   .header {
     width: 500px;
@@ -312,7 +313,7 @@ textarea::placeholder {
   }
 
   .footer-nav {
-    width: 500px;
+    /* width: 500px; */
     flex-direction: column;
   }
 

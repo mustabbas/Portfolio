@@ -256,7 +256,6 @@ input {
   border: 1px solid #ccc;
   border-radius: 4px;
   box-sizing: border-box;
-  margin-bottom: 30px;
 }
 
 textarea::placeholder {
@@ -264,10 +263,6 @@ textarea::placeholder {
   padding: 20px;
 }
 
-.btn  {
-  margin-left: 150 px;
-  margin-top: 30px;
-}
 @media only screen and (max-width: 500px) {
   .header {
     width: 500px;

@@ -26,6 +26,7 @@ a,
 span {
   color: #b3bac5;
 }
+p {color: black;}
 
 .header {
   display: flex;
@@ -222,11 +223,15 @@ h3 {
   text-transform: uppercase;
 }
 
-.card-body ul {
+/* .card-body ul {
   display: flex;
   justify-content: space-around;
   font-size: 30px;
   text-align: left;
+} */
+
+.card-body ul {
+  
 }
 
 .vertical-line {
@@ -241,6 +246,7 @@ h3 {
   color: #fff;
   font-size: 15px;
   margin-top: 20px;
+  margin-left: 150px;
 }
 
 .button:hover {
@@ -256,7 +262,6 @@ input {
   border: 1px solid #ccc;
   border-radius: 4px;
   box-sizing: border-box;
-  margin-bottom: 30px;
 }
 
 textarea::placeholder {
@@ -264,10 +269,6 @@ textarea::placeholder {
   padding: 20px;
 }
 
-.btn  {
-  margin-left: 150 px;
-  margin-top: 30px;
-}
 @media only screen and (max-width: 500px) {
   .header {
     width: 500px;

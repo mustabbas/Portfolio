@@ -166,10 +166,10 @@ span {
   display: flex;
 }
 
-.linked-container div {
+/* .linked-container div {
   display: flex;
   flex-direction: column;
-}
+} */
 
 #vector2 {
   margin-left: auto;
