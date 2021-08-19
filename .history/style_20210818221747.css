@@ -299,18 +299,6 @@ textarea::placeholder {
 @media (min-width: 600px) {
   .card {
     height: 448px;
-    animation-name: leftcard;
-    animation-duration: 3s;
-    animation-timing-function: linear;
-    animation-direction: alternate;
-  }
-
-  @keyframes leftcard {
-    0%   {margin-left:100%; }
-    25%  { margin-left:75%; }
-    50%  { margin-left:50%;}
-    75%  {margin-left:25%; }
-    100% { margin-left:142px;}
   }
 
   .card-body {
@@ -352,7 +340,6 @@ textarea::placeholder {
     line-height: 47px;
     margin-top: 0;
     text-align: center;
-
   }
 
   .wrap-content {

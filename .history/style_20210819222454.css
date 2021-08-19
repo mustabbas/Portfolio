@@ -299,7 +299,7 @@ textarea::placeholder {
 @media (min-width: 600px) {
   .card {
     height: 448px;
-    animation-name: leftcard;
+    animation-name: example;
     animation-duration: 3s;
     animation-timing-function: linear;
     animation-direction: alternate;

@@ -299,13 +299,15 @@ textarea::placeholder {
 @media (min-width: 600px) {
   .card {
     height: 448px;
-    animation-name: leftcard;
-    animation-duration: 3s;
+    animation-name: example;
+    animation-duration: 5s;
     animation-timing-function: linear;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
     animation-direction: alternate;
   }
-
-  @keyframes leftcard {
+  
+  @keyframes example {
     0%   {margin-left:100%; }
     25%  { margin-left:75%; }
     50%  { margin-left:50%;}

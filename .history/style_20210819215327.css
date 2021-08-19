@@ -299,18 +299,6 @@ textarea::placeholder {
 @media (min-width: 600px) {
   .card {
     height: 448px;
-    animation-name: leftcard;
-    animation-duration: 3s;
-    animation-timing-function: linear;
-    animation-direction: alternate;
-  }
-
-  @keyframes leftcard {
-    0%   {margin-left:100%; }
-    25%  { margin-left:75%; }
-    50%  { margin-left:50%;}
-    75%  {margin-left:25%; }
-    100% { margin-left:142px;}
   }
 
   .card-body {
@@ -345,6 +333,20 @@ textarea::placeholder {
     font-weight: bold;
     margin: 24px 0;
     text-align: center;
+    animation-name: example;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+  }
+
+  @keyframes example {
+    0%   {background-color:red; left:0px; top:0px;}
+    25%  {background-color:yellow; left:200px; top:0px;}
+    50%  {background-color:blue; left:200px; top:200px;}
+    75%  {background-color:green; left:0px; top:200px;}
+    100% {background-color:red; left:0px; top:0px;}
   }
 
   .title-wraper h2 {
@@ -352,7 +354,6 @@ textarea::placeholder {
     line-height: 47px;
     margin-top: 0;
     text-align: center;
-
   }
 
   .wrap-content {
