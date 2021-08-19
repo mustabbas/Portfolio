@@ -221,22 +221,6 @@ span {
   font-size: 20px;
   line-height: 28px;
   text-align: left;
-  animation-name: card-p;
-  animation-duration: 3s;
-  animation-timing-function: linear;
-  animation-direction: alternate;
-}
-
-@keyframes card-p {
-  from {
-    font-size: 10px;
-    line-height: 10px;
-  }
-
-  to {
-    font-size: 20px;
-    line-height: 28px;
-  }
 }
 
 .card-body ul {
@@ -315,9 +299,6 @@ textarea::placeholder {
 @media (min-width: 600px) {
   .card {
     height: 448px;
-  }
-
-  .card-left {
     animation-name: leftcard;
     animation-duration: 3s;
     animation-timing-function: linear;
@@ -325,11 +306,11 @@ textarea::placeholder {
   }
 
   @keyframes leftcard {
-    0% { margin-left: 100%; }
-    25% { margin-left: 75%; }
-    50% { margin-left: 50%; }
-    75% { margin-left: 25%; }
-    100% { margin-left: 142px; }
+    0%   {margin-left:100%; }
+    25%  { margin-left:75%; }
+    50%  { margin-left:50%;}
+    75%  {margin-left:25%; }
+    100% { margin-left:142px;}
   }
 
   .card-body {
@@ -346,21 +327,7 @@ textarea::placeholder {
 
   .card-reverse {
     flex-direction: row-reverse;
-    animation-name: reversecard;
-    animation-duration: 3s;
-    animation-timing-function: linear;
-    animation-direction: alternate;
     margin-right: 142px;
-  }
-
-  @keyframes reversecard {
-    from {
-      margin-right: 100%;
-    }
-
-    to {
-      margin-right: 142px;
-    }
   }
 
   .card-reverse img {
@@ -385,6 +352,7 @@ textarea::placeholder {
     line-height: 47px;
     margin-top: 0;
     text-align: center;
+
   }
 
   .wrap-content {

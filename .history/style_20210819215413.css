@@ -221,22 +221,6 @@ span {
   font-size: 20px;
   line-height: 28px;
   text-align: left;
-  animation-name: card-p;
-  animation-duration: 3s;
-  animation-timing-function: linear;
-  animation-direction: alternate;
-}
-
-@keyframes card-p {
-  from {
-    font-size: 10px;
-    line-height: 10px;
-  }
-
-  to {
-    font-size: 20px;
-    line-height: 28px;
-  }
 }
 
 .card-body ul {
@@ -317,21 +301,6 @@ textarea::placeholder {
     height: 448px;
   }
 
-  .card-left {
-    animation-name: leftcard;
-    animation-duration: 3s;
-    animation-timing-function: linear;
-    animation-direction: alternate;
-  }
-
-  @keyframes leftcard {
-    0% { margin-left: 100%; }
-    25% { margin-left: 75%; }
-    50% { margin-left: 50%; }
-    75% { margin-left: 25%; }
-    100% { margin-left: 142px; }
-  }
-
   .card-body {
     margin-left: 24px;
     width: 40%;
@@ -346,21 +315,7 @@ textarea::placeholder {
 
   .card-reverse {
     flex-direction: row-reverse;
-    animation-name: reversecard;
-    animation-duration: 3s;
-    animation-timing-function: linear;
-    animation-direction: alternate;
     margin-right: 142px;
-  }
-
-  @keyframes reversecard {
-    from {
-      margin-right: 100%;
-    }
-
-    to {
-      margin-right: 142px;
-    }
   }
 
   .card-reverse img {
@@ -385,6 +340,20 @@ textarea::placeholder {
     line-height: 47px;
     margin-top: 0;
     text-align: center;
+    animation-name: example;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+  }
+
+  @keyframes example {
+    0%   {background-color:red; left:0px; top:0px;}
+    25%  {background-color:yellow; left:200px; top:0px;}
+    50%  {background-color:blue; left:200px; top:200px;}
+    75%  {background-color:green; left:0px; top:200px;}
+    100% {background-color:red; left:0px; top:0px;}
   }
 
   .wrap-content {
