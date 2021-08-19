@@ -224,7 +224,7 @@ span {
   animation-name: card-p;
   animation-duration: 3s;
   animation-timing-function: linear;
-  animation-direction: alternate; 
+  animation-direction: alternate;
 }
 
 @keyframes card-p {
@@ -232,6 +232,7 @@ span {
     font-size: 10px;
     line-height: 10px;
   }
+
   to {
     font-size: 20px;
     line-height: 28px;
