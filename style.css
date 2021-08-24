@@ -312,7 +312,7 @@ textarea::placeholder {
 }
 
 /* Desktop view */
-@media (min-width: 600px) {
+@media (min-width: 768px) {
   .card {
     height: 448px;
   }
@@ -425,7 +425,7 @@ textarea::placeholder {
 }
 
 /* mobile view */
-@media (max-width: 500px) {
+@media (max-width: 768px) {
   .container {
     align-items: center;
     width: 500px;
