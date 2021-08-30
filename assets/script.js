@@ -1,8 +1,8 @@
 const humberger = document.getElementById('humberger');
 const closeButton = document.getElementById('closeButton');
-const portoflio = document.getElementById('Portoflio');
-const about = document.getElementById('About');
-const contact = document.getElementById('Contact');
+const portoflio = document.getElementById('portoflio');
+const about = document.getElementById('about');
+const contact = document.getElementById('contact');
 
 const mobileNav = document.querySelector('.mobile-menu-wrap');
 const container = document.querySelector('.container');
