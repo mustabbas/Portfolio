@@ -1,11 +1,11 @@
 @font-face {
-  font-family: 'roboto';
+  font-family: "roboto";
   src: url(assets/font/Roboto/Roboto-Regular.ttf);
 }
 
 body {
   background-color: #191765;
-  font-family: 'roboto', sans-serif;
+  font-family: "roboto", sans-serif;
 }
 
 ul {
@@ -311,6 +311,10 @@ textarea::placeholder {
   margin-top: 30px;
 }
 
+.display-none {
+  display: none;
+}
+
 /* Desktop view */
 @media (min-width: 768px) {
   .card {
@@ -325,11 +329,21 @@ textarea::placeholder {
   }
 
   @keyframes leftcard {
-    0% { margin-left: 100%; }
-    25% { margin-left: 75%; }
-    50% { margin-left: 50%; }
-    75% { margin-left: 25%; }
-    100% { margin-left: 142px; }
+    0% {
+      margin-left: 100%;
+    }
+    25% {
+      margin-left: 75%;
+    }
+    50% {
+      margin-left: 50%;
+    }
+    75% {
+      margin-left: 25%;
+    }
+    100% {
+      margin-left: 142px;
+    }
   }
 
   .card-body {
@@ -429,7 +443,6 @@ textarea::placeholder {
   .container {
     align-items: center;
     width: 500px;
-    display: none;
   }
 
   .header {
@@ -440,16 +453,16 @@ textarea::placeholder {
   .main-nav {
     display: none;
   }
- 
+
   .mobile-menu-wrap {
     width: 500px;
-    height: 100vh;
-    background-image: url('./assets/img/mobile-menu-bg.png');
+    height: 150vh;
+    background-image: url("./assets/img/mobile-menu-bg.png");
     background-repeat: no-repeat;
     background-size: cover;
   }
 
-  .mobile-nav{
+  .mobile-nav {
     width: 100vw;
     height: 200px;
     display: flex;
@@ -457,7 +470,7 @@ textarea::placeholder {
     justify-content: space-evenly;
     margin-left: 24px;
   }
-  
+
   .mobile-nav div {
     display: flex;
     justify-content: space-between;
@@ -471,7 +484,7 @@ textarea::placeholder {
     font-weight: 500;
     font-size: 24px;
     line-height: 32px;
-    color: #EDECFF;
+    color: #edecff;
   }
 
   #closeButton {
