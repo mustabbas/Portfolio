@@ -78,19 +78,19 @@
             </div>
         </section>
         <div class="mobile-menu-wrap display-none">
-            <img id="closeButton" src="./assets/img/close.png">
+            <img id="closeButton" src="./assets/img/close.png" alt="closeButton">
             <div class="mobile-nav">
                 <div>
-                    <a href="#">Portoflio</a>
-                    <img src="./assets/img/Right-arrow.png">
+                    <a id="Portoflio" href="#container">Portoflio</a>
+                    <img src="./assets/img/Right-arrow.png" alt="Right arrow">
                 </div>
                 <div>
-                    <a href="#">About</a>
-                    <img src="./assets/img/Right-arrow.png">
+                    <a id="About" href="#work-section">About</a>
+                    <img src="./assets/img/Right-arrow.png" alt="Right arrow">
                 </div>
                 <div>
-                    <a href="#">Contact</a>
-                    <img src="./assets/img/Right-arrow.png">
+                    <a id="Contact"  href="#card-container">Contact</a>
+                    <img src="./assets/img/Right-arrow.png" alt="Right arrow">
                 </div>
             </div>
         </div>
@@ -140,7 +140,7 @@
             </div>
         </div>
 
-        <section class="recent-work">
+        <section id = "work-section" class="recent-work">
             <h3>My recent work</h3>
             <div class="line"></div>
             <div class="card card-left">
@@ -223,7 +223,7 @@
                     <button type="button" class="button">See Project</button>
                 </div>
             </div>
-            <div class="card card-reverse">
+            <div class="card card-left">
                 <img src="./assets/img/Placeholder.png" alt="recent-work" />
                 <div class="card-body">
                     <h4>Multi-Post Stories</h4>
@@ -245,20 +245,9 @@
             </div>
         </section>
 
-        <div class="card-container">
+        <div id="card-container" class="card-container">
             <div class="card">
                 <div class="card-body center-text margin">
-                    <h3 class="h3-sm">CONTACT US</h3>
-                    <h3 class="h3-l">Let’s chat!</h3>
-                    <p id="contact-p">If you have an application you are
-                        interested in developing, a feature that you need built
-                        or a project that needs coding. I’d love to help with it</p>
-                    <form method="POST" action="https://formspree.io/f/xdoypzrq"
-                        id="aboutmeForm">
-                        <input type="text" name="name" placeholder="Text Input"
-                            maxlength="30" required />
-                        <input type="email" name="email"
-                            placeholder="jeremy@gmail.com" required />
                         <h3 class="h3-sm">CONTACT US</h3>
                         <h3 class="h3-l">Let’s chat!</h3>
                         <p id="contact-p">If you have an application you are
@@ -268,13 +257,9 @@
                         <form method="POST"
                             action="https://formspree.io/f/xdoypzrq"
                             id="aboutmeForm">
-                            <input type="text" name="name" placeholder="Text
-                                Input" maxlength="30" required/>
-                            <input type="email" name="email"
-                                placeholder="jeremy@gmail.com" required/>
-                            <textarea name="description" rows="15" cols="48"
-                                placeholder="Enter text here" maxlength="500"
-                                required></textarea>
+                            <input type="text" name="name" placeholder="Text Input" maxlength="30" required/>
+                            <input type="email" name="email" placeholder="jeremy@gmail.com" required/>
+                            <textarea name="description" rows="15" cols="48" placeholder="Enter text here" maxlength="500" required></textarea>
                             <button type="submit" form="aboutmeForm"
                                 class="button btn">See Project</button>
                         </form>
