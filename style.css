@@ -1,11 +1,11 @@
 @font-face {
-  font-family: 'roboto';
+  font-family: "roboto";
   src: url(assets/font/Roboto/Roboto-Regular.ttf);
 }
 
 body {
   background-color: #191765;
-  font-family: 'roboto', sans-serif;
+  font-family: "roboto", sans-serif;
 }
 
 ul {
@@ -30,7 +30,7 @@ span {
 .container {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
 }
 
 .header {
@@ -221,22 +221,6 @@ span {
   font-size: 20px;
   line-height: 28px;
   text-align: left;
-  animation-name: card-p;
-  animation-duration: 3s;
-  animation-timing-function: linear;
-  animation-direction: alternate;
-}
-
-@keyframes card-p {
-  from {
-    font-size: 10px;
-    line-height: 10px;
-  }
-
-  to {
-    font-size: 20px;
-    line-height: 28px;
-  }
 }
 
 .card-body ul {
@@ -311,25 +295,14 @@ textarea::placeholder {
   margin-top: 30px;
 }
 
+.display-none {
+  display: none;
+}
+
 /* Desktop view */
-@media (min-width: 600px) {
+@media (min-width: 768px) {
   .card {
     height: 448px;
-  }
-
-  .card-left {
-    animation-name: leftcard;
-    animation-duration: 3s;
-    animation-timing-function: linear;
-    animation-direction: alternate;
-  }
-
-  @keyframes leftcard {
-    0% { margin-left: 100%; }
-    25% { margin-left: 75%; }
-    50% { margin-left: 50%; }
-    75% { margin-left: 25%; }
-    100% { margin-left: 142px; }
   }
 
   .card-body {
@@ -346,21 +319,7 @@ textarea::placeholder {
 
   .card-reverse {
     flex-direction: row-reverse;
-    animation-name: reversecard;
-    animation-duration: 3s;
-    animation-timing-function: linear;
-    animation-direction: alternate;
     margin-right: 142px;
-  }
-
-  @keyframes reversecard {
-    from {
-      margin-right: 100%;
-    }
-
-    to {
-      margin-right: 142px;
-    }
   }
 
   .card-reverse img {
@@ -425,7 +384,7 @@ textarea::placeholder {
 }
 
 /* mobile view */
-@media (max-width: 500px) {
+@media (max-width: 768px) {
   .container {
     align-items: center;
     width: 500px;
@@ -433,15 +392,48 @@ textarea::placeholder {
 
   .header {
     width: 500px;
-    justify-content: space-around;
-  }
-
-  .header ul {
-    display: none;
+    justify-content: space-between;
   }
 
   .main-nav {
+    display: none;
+  }
+
+  .mobile-menu-wrap {
+    width: 500px;
+    height: 150vh;
+    background-image: url("./assets/img/mobile-menu-bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .mobile-nav {
+    width: 100vw;
+    height: 200px;
+    display: flex;
     flex-direction: column;
+    justify-content: space-evenly;
+    margin-left: 24px;
+  }
+
+  .mobile-nav div {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .mobile-nav a {
+    display: block;
+    text-decoration: none;
+    font-family: "roboto", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 32px;
+    color: #edecff;
+  }
+
+  #closeButton {
+    margin-left: 80%;
   }
 
   .head-wraper {
