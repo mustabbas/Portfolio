@@ -429,7 +429,6 @@ textarea::placeholder {
   .container {
     align-items: center;
     width: 500px;
-    display: none;
   }
 
   .header {
@@ -441,42 +440,13 @@ textarea::placeholder {
     display: none;
   }
  
-  .mobile-menu-wrap {
-    width: 500px;
-    height: 100vh;
-    background-image: url('./assets/img/mobile-menu-bg.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-
   .mobile-nav{
-    width: 100vw;
-    height: 200px;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
-    margin-left: 24px;
+    align-content: space-between;
+    justify-content:space-between;
   }
   
-  .mobile-nav div {
-    display: flex;
-    justify-content: space-between;
-  }
-
-  .mobile-nav a {
-    display: block;
-    text-decoration: none;
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 24px;
-    line-height: 32px;
-    color: #EDECFF;
-  }
-
-  #closeButton {
-    margin-left: 80%;
-  }
 
   .head-wraper {
     width: 500px;

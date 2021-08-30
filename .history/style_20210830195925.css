@@ -442,11 +442,9 @@ textarea::placeholder {
   }
  
   .mobile-menu-wrap {
-    width: 500px;
     height: 100vh;
     background-image: url('./assets/img/mobile-menu-bg.png');
     background-repeat: no-repeat;
-    background-size: cover;
   }
 
   .mobile-nav{
@@ -475,7 +473,7 @@ textarea::placeholder {
   }
 
   #closeButton {
-    margin-left: 80%;
+    margin-left: 100%;
   }
 
   .head-wraper {
