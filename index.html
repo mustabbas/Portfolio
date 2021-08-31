@@ -138,7 +138,7 @@
                 <h3>My recent work</h3>
                 <div class="line"></div>
                 <div class="card card-left">
-                    <img src="./assets/img/Placeholder.png" alt="recent-work" />
+                    <img class="card-image" src="./assets/img/Placeholder.png" alt="recent-work" />
                     <div class="card-body">
                         <h4>Multi-Post Stories</h4>
                         <p>A daily selection of privately personalized reads; no
@@ -160,7 +160,7 @@
                     </div>
                 </div>
                 <div class="card card-reverse">
-                    <img src="./assets/img/Placeholder.png" alt="recent-work" />
+                    <img class="card-image" src="./assets/img/Placeholder.png" alt="recent-work" />
                     <div class="card-body">
                         <h4>Multi-Post Stories</h4>
                         <p>A daily selection of privately personalized reads; no
@@ -182,7 +182,7 @@
                     </div>
                 </div>
                 <div class="card card-left">
-                    <img src="./assets/img/Placeholder.png" alt="recent-work" />
+                    <img class="card-image" src="./assets/img/Placeholder.png" alt="recent-work" />
                     <div class="card-body">
                         <h4>Multi-Post Stories</h4>
                         <p>A daily selection of privately personalized reads; no
@@ -204,7 +204,7 @@
                     </div>
                 </div>
                 <div class="card card-reverse">
-                    <img src="./assets/img/Placeholder.png" alt="recent-work" />
+                    <img class="card-image" src="./assets/img/Placeholder.png" alt="recent-work" />
                     <div class="card-body">
                         <h4>Multi-Post Stories</h4>
                         <p>A daily selection of privately personalized reads; no
@@ -226,7 +226,7 @@
                     </div>
                 </div>
                 <div class="card card-left">
-                    <img src="./assets/img/Placeholder.png" alt="recent-work" />
+                    <img class="card-image" src="./assets/img/Placeholder.png" alt="recent-work" />
                     <div class="card-body">
                         <h4>Multi-Post Stories</h4>
                         <p>A daily selection of privately personalized reads; no
@@ -261,8 +261,7 @@
                         <form method="POST"
                             action="https://formspree.io/f/xdoypzrq"
                             id="aboutmeForm">
-                            <input type="text" name="name" placeholder="Text
-                                Input"
+                            <input type="text" name="name" placeholder="Text Input"
                                 maxlength="30" required/>
                             <input type="email" name="email"
                                 placeholder="jeremy@gmail.com" required/>
@@ -329,30 +328,18 @@
         <section class="popup-wrap display-none">
             <div class="popup-container">
                 <div class="popup-header">
-                    <h2>Multi-post story</h2>
+                    <h2 id="popup-card-header"></h2>
                     <img id="popup-close-button" src="./assets/img/close.png"
                         alt="close Button">
                 </div>
                 <div class="popup-body">
-                    <img class="imgBody" src="./assets/img/WorkPopup.png"
-                        alt="work popup">
-                    <p>Lorem Ipsum is simply dummy text of the printing and
-                        typesetting industry. Lorem Ipsum has been the
-                        industry's standard dummy text ever since the 1500s,
-                        when an unknown printer took a galley of type and
-                        scrambled it 1960s with the releaLorem Ipsum is simply
-                        dummy text of the printing and typesetting industry.
-                        Lorem Ipsum has been the industry's standard dummy text
-                        ever since the 1500s, when an unknown Lorem Ipsum is
-                        simply dummy text of the printing and typesetting
-                        industry. Lorem Ipsum has been the industry's standard
-                        dummy text ever since the 1500s, when an unknown printer
-                        took a galley of type and scramble.</p>
+                    <img id="popup-card-img" class="imgBody" src="./assets/img/WorkPopup.png" alt="work popup">
+                    <p id="popup-card-description"></p>
                     <ul>
-                        <li>html</li>
-                        <li>Ruby on Rails</li>
-                        <li>css</li>
-                        <li>Github</li>
+                        <li class="itemList">html</li>
+                        <li class="itemList">Ruby on Rails</li>
+                        <li class="itemList">css</li>
+                        <li class="itemList" id="secoundLIst">Github</li>
                     </ul>
                     <div class="popup-footer">
                         <button> See Live<img src="./assets/img/vector-live.png"
