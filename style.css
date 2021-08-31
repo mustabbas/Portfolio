@@ -84,7 +84,6 @@ span {
   max-width: 450px;
 }
 
-
 .skills {
   display: flex;
   justify-content: space-between;
@@ -290,7 +289,73 @@ textarea::placeholder {
 }
 
 .display-none {
-  display: none;
+  display: none !important;
+}
+
+.popup-wrap {
+  background-image: url("./assets/img/two-circles-header.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.popup-container {
+  margin: 150px;
+  border: 1px solid #ffffff;
+  background: rgba(255, 255, 255, 0.16);
+}
+
+.popup-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 24px;
+}
+
+.popup-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 24px;
+}
+
+.imgBody {
+  width: 100%;
+}
+
+.popup-body p {
+  text-align: center;
+  padding: 0 250px;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 30px;
+}
+
+.popup-body ul {
+  display: flex;
+}
+
+.popup-body li {
+  padding: 14px;
+  border-left: 1px solid #81818c;
+}
+
+.popup-body li:last-child {
+  border-right: 1px solid #81818c;
+}
+
+.popup-footer {
+  display: flex;
+}
+
+.popup-footer button {
+  background-color: #7d73fc;
+  color: #fff;
+  margin: 40px;
+  width: 108px;
+  height: 48px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 /* Desktop view */
@@ -384,73 +449,6 @@ textarea::placeholder {
     margin-left: 200px;
     margin-right: 300px;
   }
-  
-  .popup-wrap {
-    background-image: url('./assets/img/two-circles-header.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-
-  .popup-container {
-    margin: 150px;
-    border: 1px solid #FFFFFF;
-    background: rgba(255, 255, 255, 0.16);
-  }
-
-  .popup-header{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 0 24px;
-  }
-  
-  .popup-body {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 0 24px;
-  }
-
-  .imgBody {
-    width: 100%;
-  }
-
-  .popup-body p {
-    text-align: center;
-    padding: 0 250px;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 30px;
-  }
-
-  .popup-body ul {
-    display: flex;
-
-  }
-
-  .popup-body li {
-    padding: 14px;
-    border-left: 1px solid #81818C;
-  }
-
-  .popup-body li:last-child {
-    border-right: 1px solid #81818C;
-  }
-
-  .popup-footer {
-    display: flex;
-  }
-
-  .popup-footer button {
-    background-color: #7d73fc;
-    color: #fff;
-    margin: 40px;
-    width: 108px;
-    height: 48px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
 }
 
 /* mobile view */
@@ -535,7 +533,7 @@ textarea::placeholder {
     width: 500px;
     background-position: 400px 10px;
   }
-  
+
   .humberger img {
     width: 35.33px;
     height: 22.83px;
@@ -592,5 +590,28 @@ textarea::placeholder {
 
   .h3-l {
     display: none;
+  }
+
+  .popup-wrap {
+    background-image: url("./assets/img/Top-circles.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  .popup-container {
+    margin: 24px;
+  }
+
+  .popup-body p {
+    text-align: center;
+    padding: 20px;
+  }
+
+  .popup-footer {
+    flex-direction: column;
+  }
+
+  .popup-footer button {
+    margin: 10px 0;
   }
 }
