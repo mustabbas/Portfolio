@@ -24,7 +24,6 @@ function hideMenu() {
   container2.classList.add('display-none');
   container3.classList.add('display-none');
   container4.classList.add('display-none');
-  // window.location.hash = 'jump_to_this_location';
 }
 
 humberger.addEventListener('click', hideMenu);
