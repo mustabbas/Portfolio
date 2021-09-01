@@ -64,8 +64,6 @@ span {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url("./assets/img/circle1header.svg");
-  background-repeat: no-repeat;
 }
 
 .title-wraper {
@@ -84,11 +82,6 @@ span {
   text-align: center;
   color: #b3bac5;
   max-width: 450px;
-}
-
-.wrap-content {
-  background-image: url("./assets/img/circle1header.svg");
-  background-repeat: no-repeat;
 }
 
 .skills {
@@ -189,6 +182,7 @@ span {
   grid-template-columns: auto;
   grid-template-rows: auto;
   justify-content: center;
+  justify-items: center;
 }
 
 .card {
@@ -202,6 +196,7 @@ span {
   grid-template-columns: auto;
   grid-template-rows: auto;
   justify-content: center;
+  justify-items: center;
 }
 
 .card-container .card-body {
@@ -296,11 +291,82 @@ textarea::placeholder {
 }
 
 .display-none {
-  display: none;
+  display: none !important;
+}
+
+.popup-wrap {
+  background-image: url("./assets/img/two-circles-header.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.popup-container {
+  margin: 150px;
+  border: 1px solid #fff;
+  background: rgba(255, 255, 255, 0.16);
+}
+
+.popup-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 24px;
+}
+
+.popup-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 24px;
+}
+
+.imgBody {
+  width: 100%;
+}
+
+.popup-body p {
+  text-align: center;
+  padding: 0 250px;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 30px;
+}
+
+.popup-body ul {
+  display: flex;
+}
+
+.itemList {
+  padding: 14px;
+  border-left: 1px solid #81818c;
+}
+
+#secoundLIst {
+  border-right: 1px solid #81818c;
+}
+
+.popup-footer {
+  display: flex;
+}
+
+.popup-footer button {
+  background-color: #7d73fc;
+  color: #fff;
+  margin: 40px;
+  width: 108px;
+  height: 48px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 /* Desktop view */
 @media (min-width: 768px) {
+  .container {
+    background-image: url("./assets/img/two-circles-header.png");
+    background-repeat: no-repeat;
+  }
+
   .card {
     height: 448px;
   }
@@ -354,6 +420,10 @@ textarea::placeholder {
     background-position: 90% 50px;
   }
 
+  .humberger {
+    display: none;
+  }
+
   .justify-space {
     justify-content: space-around;
   }
@@ -388,6 +458,9 @@ textarea::placeholder {
   .container {
     align-items: center;
     width: 500px;
+    background-image: url("./assets/img/Top-circles.png");
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 
   .header {
@@ -438,19 +511,6 @@ textarea::placeholder {
 
   .head-wraper {
     width: 500px;
-    background-position: -160px -50px;
-  }
-
-  .head-wraper img {
-    margin-left: -200px;
-  }
-
-  .right {
-    margin-right: -100px;
-  }
-
-  .container img {
-    margin-right: -500px;
   }
 
   .box {
@@ -460,20 +520,11 @@ textarea::placeholder {
   .skills {
     flex-wrap: wrap;
     width: 500px;
-    background-position: 400px 10px;
-  }
-
-  .humberger {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
   }
 
   .humberger img {
-    width: 33.33px;
-    height: 3px;
-    margin: 5px;
-    background-color: #b3bac5;
+    width: 80px;
+    height: 50px;
   }
 
   .footer-nav {
@@ -483,10 +534,6 @@ textarea::placeholder {
 
   .footer-nav span {
     margin-top: 10px;
-  }
-
-  .ml {
-    margin-left: 100px;
   }
 
   .upper {
@@ -500,17 +547,13 @@ textarea::placeholder {
 
   .card {
     flex-direction: column;
-    width: 400px;
+    width: 90%;
   }
 
   .line {
     min-width: 450px;
     width: 33.333%;
     border-bottom: 1px solid #646369;
-  }
-
-  .wrap-content {
-    background-position: 450px 150px;
   }
 
   .work-reverse {
@@ -527,5 +570,28 @@ textarea::placeholder {
 
   .h3-l {
     display: none;
+  }
+
+  .popup-wrap {
+    background-image: url("./assets/img/Top-circles.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  .popup-container {
+    margin: 24px;
+  }
+
+  .popup-body p {
+    text-align: center;
+    padding: 20px;
+  }
+
+  .popup-footer {
+    flex-direction: column;
+  }
+
+  .popup-footer button {
+    margin: 10px 0;
   }
 }
