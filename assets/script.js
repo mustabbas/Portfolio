@@ -57,7 +57,7 @@ menuItem.forEach((element) => {
   element.addEventListener('click', toggleMenu);
 });
 
-for (let i = 0; i < seeProjectButton.length; i + 1) {
+for (let i = 0; i < seeProjectButton.length; i += 1) {
   seeProjectButton[i].addEventListener('click', () => {
     togglePopup(i);
   });
