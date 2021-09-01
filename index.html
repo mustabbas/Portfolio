@@ -261,15 +261,13 @@
                         <form method="POST"
                             action="https://formspree.io/f/xdoypzrq"
                             id="aboutmeForm">
-                            <input type="text" name="name" placeholder="Text Input"
-                                maxlength="30" required/>
-                            <input type="email" name="email"
-                                placeholder="jeremy@gmail.com" required/>
-                            <textarea name="description" rows="15" cols="48"
-                                placeholder="Enter text here" maxlength="500"
-                                required></textarea>
-                            <button type="submit" form="aboutmeForm"
-                                class="button btn">See Project</button>
+                            <input id="name" type="text" name="name" placeholder="Text Input" maxlength="30" required/>
+                            <input id="email" type="email" name="email" placeholder="jeremy@gmail.com"  required/>
+                            <textarea name="description" rows="15" cols="48" placeholder="Enter text here" maxlength="500" required></textarea>
+                            <div class="error-container">
+                            <span class="errorSpan display-none"></span>
+                            <button id="submit" type="submit" form="aboutmeForm" class="button btn">See Project</button>
+                            </div>
                         </form>
                     </div>
                     <footer class="footer-nav justify-center">
