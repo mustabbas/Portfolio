@@ -10,6 +10,10 @@ const popupcardheader = document.querySelector('#popup-card-header');
 const popupCardImg = document.querySelector('#popup-card-img');
 const popupCardDescription = document.querySelector('#popup-card-description');
 
+const form = document.querySelector('#aboutmeForm');
+const email = document.querySelector('#email');
+const errorSpan = document.querySelector('.errorSpan');
+
 const objectcard1 = {
   name: 'Multi-post story1',
   image: './assets/img/WorkPopup.png',
@@ -49,6 +53,18 @@ function togglePopup(i) {
   popupcardheader.textContent = objectCard[i].name;
   popupCardImg.src = objectCard[i].image;
   popupCardDescription.textContent = objectCard[i].description;
+}
+
+function checkEmailLowerCase(event) {
+  const lowerCase = email.value.toLowerCase();
+  if(lowerCase !== email.value){
+      event.preventDefault();
+      errorSpan.classList.remove('display-none');
+      errorSpan.textContent = "email should not content upper case";
+  }else{
+    errorSpan.classList.add('display-none');
+    errorSpan.textContent = '';
+  }
 }
 
 humberger.addEventListener('click', toggleMenu);
