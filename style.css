@@ -239,11 +239,12 @@ span {
   height: 50px;
   border-right: 3px solid #646369;
 }
- 
+
 .errorSpan {
   background-color: red;
   color: #fff;
   padding: 10px;
+  border-radius: 6px;
 }
 
 .button {
