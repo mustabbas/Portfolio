@@ -9,9 +9,10 @@ const bodyWrapper = document.querySelector('#body-wrapper');
 const popupcardheader = document.querySelector('#popup-card-header');
 const popupCardImg = document.querySelector('#popup-card-img');
 const popupCardDescription = document.querySelector('#popup-card-description');
-
 const form = document.querySelector('#aboutmeForm');
 const email = document.querySelector('#email');
+const name = document.querySelector('#name');
+const description = document.querySelector('#description');
 const errorSpan = document.querySelector('.errorSpan');
 
 const objectcard1 = {
@@ -77,6 +78,15 @@ function checkEmailLowerCase(event) {
     errorSpan.textContent = '';
   }
 }
+
+function populateStorage() {
+  const formObj = { name: name.value, email: email.value, description: description.value };
+  localStorage.setItem('formData', JSON.stringify(formObj));
+}
+
+name.addEventListener('change', populateStorage);
+email.addEventListener('change', populateStorage);
+description.addEventListener('change', populateStorage);
 
 humberger.addEventListener('click', toggleMenu);
 closeButton.addEventListener('click', toggleMenu);
