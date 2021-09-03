@@ -23,7 +23,7 @@ const objectcard1 = {
 };
 const objectcard2 = {
   name: 'Multi-post story2',
-  image: './assets/img/WorkPopup.png',
+  image: './assets/img/WorkPopup.png'
   description:
     'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry',
 };
@@ -110,7 +110,7 @@ form.addEventListener('submit', (event) = {
   checkEmailLowerCase(event);
 });
 
-window.addEventListener('load', () => {
+window.addEventListener('load', () = {
   const data = this.localStorage.getItem('formData');
   const parsed = JSON.parse(data);
   email.value = parsed.email;
