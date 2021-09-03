@@ -33,7 +33,7 @@ const objectcard3 = {
     'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry',
 };
 const objectcard4 = {
-  name: 'Multi-post story4',
+  name: 'Multi-post story4'
   image: './assets/img/WorkPopup.png',
   description:
     'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry',
@@ -92,6 +92,6 @@ for (let i = 0; i < seeProjectButton.length; i += 1) {
 
 popUpCloseButton.addEventListener('click', togglePopup);
 
-form.addEventListener('submit', (event) => {
+form.addEventListener('submit', (event) = {
   checkEmailLowerCase(event);
 });
